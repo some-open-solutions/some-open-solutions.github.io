@@ -4,57 +4,79 @@
 <script src="libraries/popper.min.js"></script>
 <script src="libraries/bootstrap.4.0.min.js"></script>
 <style>
+body::after {
+  
+  content: "";
+  background: url(background_3_8_2020.png);
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;  
+}
 td{
 	padding:10px
 }
 #everything{
+  background-color: #f7f7f7;
 	margin:20px; 
 	max-width:900px;
 	position:absolute; /*it can be fixed too*/
 	left:0; right:0;
 	top:0; bottom:0;
 	margin:auto;
-	max-height:500px;
+	box-shadow: 10px 10px 5px grey;
+  max-height:650px;  
+}
+.left_btn{
+  width:100%;
+}
+.sos_shadow{
+  
 }
 </style>
-<div class="jumbotron" id="everything">
-  <h1 class="display-4 text-primary">Some Open Solutions</h1>
-  <p class="lead">Free to use without restriction</p>
+<div class="jumbotron text-primary" id="everything">
+  <h1 class="display-2 text-primary sos_shadow">Some Open Solutions</h1>
+  <h2 class="display-4 sos_shadow">Free to use without restriction</h2>
   <hr class="my-4">
-  <table>
+  <table class="text-primary">
 		<tr>
 			<td>
-				<a class="btn btn-primary btn-lg" href="https://some-open-solutions.github.io/ocollector/" role="button" target="_blank">Collector</a> can be used for online eyetracking, behavioural research and questionnaires.
+				<a class="btn btn-primary btn-lg left_btn" href="https://some-open-solutions.github.io/ocollector/" role="button" target="_blank">Collector</a> 
 			</td>
+      <td>
+        can be used for online eyetracking, behavioural research and questionnaires.
+      </td>
 			<td>
 				<a class="btn btn-primary btn-lg" href="https://github.com/some-open-solutions/collector-dev" role="button" target="_blank">Code</a>
 			</td>
+      <td>
+        <a class="btn btn-primary btn-lg" href="https://docs.google.com/document/d/1SKYIJF1dAjMDS6EHUIwfZm2KQVOzx17S6LbU_oSGxdE/edit?usp=sharing" role="button" target="_blank">Documentation</a>
+      </td>
 		</tr>
 		<tr>
 			<td>
-				<a class="btn btn-primary btn-lg" href="https://some-open-solutions.github.io/classroom-tracking/" role="button" target="_blank">Classroom Tracking</a> to help students as they work through a worksheet
+				<a class="btn btn-primary btn-lg left_btn" href="https://some-open-solutions.github.io/classroom-tracking/" role="button" target="_blank">Classroom Tracking</a>
 			</td>
+      <td>
+        helps teacher help students as they work through a worksheet
+      </td>
 			<td>
 				<a class="btn btn-primary btn-lg" href="https://github.com/some-open-solutions/classroom-tracking-dev" role="button" target="_blank">Code</a>
 			</td>
 		</tr>
     <tr>
 			<td>
-				<a class="btn btn-primary btn-lg" href="https://some-open-solutions.github.io/community-map/" role="button" target="_blank">Community Map</a> allows you to see where the members of your community are.
+				<a class="btn btn-primary btn-lg left_btn" href="https://some-open-solutions.github.io/community-map/" role="button" target="_blank">Community Map</a> 
 			</td>
+      <td>
+        allows you to see where the members of your community are.
+      </td>
 			<td>
 				<a class="btn btn-primary btn-lg" href="https://some-open-solutions.github.io/community-map-dev/" role="button" target="_blank">Code</a>
 			</td>
 		</tr>
-		<!--
-		<tr>
-			<td>
-				Or are you interested in online <a class="btn btn-primary btn-lg" href="https://some-open-solutions.github.io/games/" role="button" target="_blank">Games</a> with your friends, without having to register?</p>
-			</td>
-			<td>
-				<a class="btn btn-primary btn-lg" href="https://github.com/some-open-solutions/games-dev" role="button" target="_blank">Code</a>
-			</td>
-		</tr>
-		-->
 	</table>
 </div>
